@@ -5,7 +5,6 @@ PSQL="psql --username=freecodecamp --dbname=number_guess -t --no-align -c"
 NUM_TO_GUESS=$(($RANDOM%1000 + 1))
 GUESS_COUNT=0
 
-echo -e "\nGuess count is $GUESS_COUNT"
 echo "Enter your username:"
 read USERNAME
 
