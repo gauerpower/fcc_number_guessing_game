@@ -45,7 +45,6 @@ GUESSING_PROCESS() {
       if [[ $GUESS_COUNT -lt $BEST_GAME ]]
       then
         UPDATE_BEST_GAME_DATA=$($PSQL "UPDATE users SET best_game=$GUESS_COUNT WHERE name='$USERNAME'")
-        echo $UPDATE_BEST_GAME_DATA
       else
         echo "Your previous best game was $BEST_GAME."
       fi
