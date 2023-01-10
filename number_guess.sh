@@ -19,7 +19,6 @@ then
 else
   echo "Welcome, $USERNAME! It looks like this is your first time here."
   USERNAME_HAS_BEEN_INSERTED=$($PSQL "INSERT INTO users(name) VALUES('$USERNAME')")
-  USERNAME_FROM_DB=$($PSQL "SELECT name FROM users WHERE name='$USERNAME'")
 fi
 echo -e "\nGuess the secret number between 1 and 1000:"
 
